@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+
+@font-face {
+    font-family: Mak;
+    src: url(font/Mak.otf);
+}
+
+:root {
+    --red: #ff3838;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+
+    background: url(../images/pexels-jonathanborba-2983101.jpg) fixed center;
+}
+
+*::selection {
+    background: var(--red);
+    color: #fff;
+}
+/* section{
+    padding: 2rem 9%;
+} */
+
+html {
+    font-size: 62.5%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+
+section {
+    padding: 2rem 9%;
+    background-color: #fffcf2;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    /* padding: 2rem 9%; */
+    padding: 10px 30px 10px 40px;
+    transition: 0.25 ease tranform;
+    /* background: linear-gradient(to bottom,white,transparent); */
+}
+
+
+header .logo {
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: #000000;
+    font-family: Mak;
+    text-transform: lowercase;
+}
+
+header .logo span {
+    color: #000000;
+    font-weight: 1000;
+}
+
+header .navbar a {
+    font-size: 18px;
+    margin-left: 1.5rem;
+    color:  #000000;
+    margin: 15px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+}
+
+header .navbar a:hover {
+    color: #ffba08;
+}
+
+.cusLogin{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cusLogin a{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color:  #000000;
+    margin: 15px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+}
+
+.cusLogin button{
+    font-weight: 600;
+    border-radius: 8px;
+    background: #000000;
+    color: white;
+}
+
+#signupBtn{
+
+    padding: 10px 15px;
+    
+}
+#loginBtn{
+    padding: 10px 15px;
+    
+}
+
+.cusLogin button:hover{
+    background: #ffba08;
+}
+
+.cusInfo{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cusInfo button{
+    font-weight: 600;
+    border-radius: 8px;
+    background: #000000;
+    color: white;
+
+}
+
+#bookBtn{
+    padding: 10px 15px;
+}
+
+#logoutBtn{
+    padding: 10px 15px;
+}
+
+.cusInfo button:hover{
+    background: #ffba08;
+}
+
+.cusInfo span{
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
+.hidden{
+    transform: translateY(-100%);
+}
+
+/* .container {
+    
+
+} */
+
+
+.content {
+    text-align: center;
+}
+
+.container .content h1 {
+    font-size: 100px;
+    font-weight: 100;
+    color: #fffcf2;
+    display: flex;
+    justify-content: center;
+    padding: 235px;
+    font-family: "Playwrite ES", cursive;
+}
+
+.box-container {
+    display: inline-block;
+}
+
+.box-container .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #000000;
+    margin: 20px;
+    text-align: left;
+}
+
+.speciality h1 {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 300;
+    animation: typing 7s, cursor .4s step-end infinite;
+    font-family: "Playwrite ES", cursive;;
+    margin-top: 100px;
+}
+
+.aboutus{
+    padding: 2rem 9%;
+    margin-top: 500px;
+    background-color: #fffcf2;
+}
+
+.special-food{
+    padding: 2rem 9%;
+}
+
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 100%; /* Ensure it takes full width */
+    border-radius: 8px;
+}
+
+.card {
+    flex: auto; 
+    min-width: 15%; 
+    margin: 10px; /* Adjust margin as needed */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: "Mate", serif;
+}
+.card-content label {
+    display: block;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Ensure it's above cards */
+}
+
+.slider-btn.left {
+    left: 10px;
+}
+
+.slider-btn.right {
+    right: 10px;
+}
+.slider-btn:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    margin-top: 500px;
+    background-color: #fffcf2;
+
+}
+
+.gallerymain {
+    background: url(../images/pexels-minan1398-1482803.jpg) fixed center;
+}
+
+.gallery-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.aboutusMain {
+    background: url(../images/pexels-rehanverma-3053082.jpg) fixed center;
+}
+
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
